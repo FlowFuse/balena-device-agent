@@ -1,0 +1,6 @@
+name: FlowFuse Device Agent
+type: sw.application
+version: 0.0.1
+description: >=
+  FlowFuse Device Agent packaged for Balena
+
