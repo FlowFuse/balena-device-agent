@@ -1,0 +1,15 @@
+version "2.1"
+
+services:
+  device-agent:
+    build:
+      context: .
+    restart: always
+    ports:
+      - "1880:1880"
+    volumes:
+      - resin-data:/opt/flowfuse-device
+
+volumes:
+  resin-data: {}
+
