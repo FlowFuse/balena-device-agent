@@ -4,7 +4,7 @@ RUN mkdir /opt/flowfuse-device
 RUN npm install -g @flowfuse/device-agent
 COPY device.yml /opt/flowfuse-device/device.yml
 
-COPY entrypoint.sh /opt/src/entrypoint.sh
+COPY entrypoint.sh /usr/src/entrypoint.sh
 
 
 ENTRYPOINT ["/usr/src/entrypoint.sh"]
