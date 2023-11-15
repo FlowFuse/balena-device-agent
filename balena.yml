@@ -1,4 +1,4 @@
-name: FlowFuse Device Agent
+name: flowfuse
 type: sw.application
 description: >=
   FlowFuse Device Agent packaged for Balena
