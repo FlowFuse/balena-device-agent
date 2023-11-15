@@ -7,6 +7,7 @@ services:
     build:
       context: .
     restart: always
+    privileged: true
     ports:
       - "1880:1880"
     volumes:
