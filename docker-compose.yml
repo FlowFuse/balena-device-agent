@@ -1,7 +1,9 @@
 version "2.1"
-
+networks: {}
+volumes:
+  resin-data: {}
 services:
-  device-agent:
+  devagent:
     build:
       context: .
     restart: always
@@ -9,7 +11,3 @@ services:
       - "1880:1880"
     volumes:
       - resin-data:/opt/flowfuse-device
-
-volumes:
-  resin-data: {}
-
