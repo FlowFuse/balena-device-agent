@@ -10,7 +10,7 @@ if [ -z "$FF_DEVICE_YML" ]; then
     echo "Existing device.yml found"
   fi
 else
-  echo "no device.yml env var provided"
+  echo "No device.yml env var provided"
 fi
 
 exec "$@"
