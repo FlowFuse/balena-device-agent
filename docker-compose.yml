@@ -1,7 +1,5 @@
 version: "2.1"
-networks: {}
-volumes:
-  resin-data: {}
+
 services:
   devagent:
     build:
@@ -11,4 +9,7 @@ services:
     ports:
       - "1880:1880"
     volumes:
-      - resin-data:/opt/flowfuse-device
+      - ff-device:/opt/flowfuse-device
+
+volumes:
+  ff-device:
