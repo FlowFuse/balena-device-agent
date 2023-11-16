@@ -5,6 +5,7 @@ services:
     build:
       context: .
     restart: always
+    network: host
     privileged: true
     ports:
       - "1880:1880"
