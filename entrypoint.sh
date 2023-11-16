@@ -3,7 +3,7 @@ set -e
 
 hostname $BALENA_DEVICE_NAME_AT_INIT
 
-if [ -z "$FF_DEVICE_YML" ]; then
+if ! [ -z "$FF_DEVICE_YML" ]; then
   echo "FF_DEVICE_YML env var found"
   echo "$FF_DEVICE_YML"
   if ! [ -f /opt/flowfuse-device/device.yml ]; then
