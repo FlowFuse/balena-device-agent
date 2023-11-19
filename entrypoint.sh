@@ -9,7 +9,7 @@ if  [ ! -z "$FF_DEVICE_YML" ]; then
   if [ ! -f /opt/flowfuse-device/device.yml ]; then
     echo "Writing file"
     echo $FF_DEVICE_YML | base64 -d > /opt/flowfuse-device/device.yml
-    cat /opt/flowfuse-device/device-yml
+    cat /opt/flowfuse-device/device.yml
   else
     echo "Existing device.yml found"
     cat /opt/flowfuse-device/device.yml
@@ -17,5 +17,7 @@ if  [ ! -z "$FF_DEVICE_YML" ]; then
 else
   echo "No device.yml env var provided"
 fi
+
+echo $@
 
 exec "$@"
