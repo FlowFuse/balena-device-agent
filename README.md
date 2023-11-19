@@ -1,5 +1,7 @@
 # Deploy Flowfuse Device Agent with Balena
 
+[![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/hardillb/ff-device-balena)
+
 From Team -> Settings page create a new device provisioning file
 
 Base64 encode this (with no line breaks)
