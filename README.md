@@ -8,8 +8,8 @@ The documentation for the FlowFuse Device Agent can be found [here](https://flow
 
 The FlowFuse Device Agent can be configured in 2 ways:
 
- 1. A `device.yml` file provided when the Device is created in the FlowFuse platform. This file can be injected into the Belena device using the `FF_DEVICE_YML` environment variable (see below)
- 2. A group of Devices can be give a `device.yml` that contains a Provisionig Token. This will cause the Device to connect to the FlowFuse platform and register a new device, it will then download it's own unique `device.yml` file. The Provisioning token can be passed to the Belena device using the `FF_DEVICE_YML` environment variable (see below). Provisioning tokens are created on the Team -> Settings page, under the Device's tab.
+ 1.  Using a "Device Configuration": A Device Configuration is provided when a Device is created in the FlowFuse platform. This configuration can be set in the Belena device using the `FF_DEVICE_YML` environment variable (see below)
+ 2. Using a "Device Provisioning Configuration". A Device Provisioning Configuration is provided when a Provisioning Token is generated on the FlowFuse platform. This can be used to permit the Device Agent to connect to the FlowFuse platform and auto register itself as a new device. It will then download and store it's own unique Device Configuration. This Provisioning Configuration can be set in the Belena device using the `FF_DEVICE_YML` environment variable (see below). Provisioning tokens are created on the FlowFuse platform in "Team Settings" under the "Devices" tab.
     When using a Provisioning Token the Belena Device name will match the FlowFuse Device name.
 
 ### Passing configuration via Environment variable
